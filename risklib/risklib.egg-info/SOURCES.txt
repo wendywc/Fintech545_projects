@@ -4,6 +4,7 @@ risklib/VaR.py
 risklib/__init__.py
 risklib/covar.py
 risklib/fitted_model.py
+risklib/option.py
 risklib/portfolio.py
 risklib/riskstats.py
 risklib/simulate.py
