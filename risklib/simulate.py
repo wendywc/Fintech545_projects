@@ -215,7 +215,7 @@ def copula(r,nsim,seed,fitmethod):
     for stock in r.columns:
         r_fitted[stock]= fitmethod[stock](r[stock])
         U[stock]= r_fitted[stock].u
-    R = U.corr(method='pearson')
+    R = U.corr(method='spearman')
     # Simulate
     np.random.seed(seed)
     Nsim = pca_sim(R,nsim=nsim,seed=seed)
